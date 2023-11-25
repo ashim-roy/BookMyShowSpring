@@ -52,9 +52,13 @@ These components work together in a layered architecture to maintain separation 
 
 
 Model represents the data and business logic.
+
 Controller: handles incoming requests and delegates business logic to services. interacts with incoming requests, passes data to services, and returns appropriate responses.
+
 Service holds the business logic, validates data, and orchestrates interactions between multiple repositories.
+
 Repository deals with data access and database operations. manages data access and persistence
+
 DTO aids in transporting data between layers, allowing controlled access and preventing direct exposure of domain models.
 
 This separation helps in maintaining a clean and organized codebase, improves testability, facilitates reusability, and makes the application more maintainable and scalable
